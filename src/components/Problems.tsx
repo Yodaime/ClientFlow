@@ -55,7 +55,7 @@ export default function Problems() {
                     viewport={{ once: true, margin: '-80px' }}
                 >
                     {problems.map((problem, i) => (
-                        <motion.div key={i} className="problems__card glass-card" variants={cardVariants}>
+                        <motion.div key={i} className="problems__card glass-card">
                             <div className="problems__icon-wrapper">
                                 <problem.icon size={24} />
                             </div>
