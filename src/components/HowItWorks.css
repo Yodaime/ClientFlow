@@ -1,0 +1,114 @@
+.how__header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how__steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+.how__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 1rem;
+}
+
+.how__step-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-light);
+    position: relative;
+    font-size: 1.25rem;
+    box-shadow: 0 0 25px hsla(217, 91%, 60%, 0.2);
+}
+
+.how__step-number {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--gradient-main);
+    color: var(--text-primary);
+    font-size: 0.688rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how__connector {
+    display: none;
+}
+
+/* Connector line between steps  */
+.how__steps::before,
+.how__steps::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    height: 2px;
+    background: var(--gradient-main);
+    opacity: 0.4;
+    border-radius: var(--radius-full);
+}
+
+.how__steps::before {
+    left: calc(33.33% - 1rem);
+    width: calc(33.33% - 3rem + 2rem);
+}
+
+.how__steps::after {
+    left: calc(66.66% - 1rem);
+    width: calc(33.33% - 3rem + 2rem);
+}
+
+.how__step-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.how__step-desc {
+    font-size: 0.938rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+@media (max-width: 768px) {
+    .how__steps {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .how__steps::before,
+    .how__steps::after {
+        display: none;
+    }
+
+    .how__step {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .how__step:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
