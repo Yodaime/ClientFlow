@@ -22,7 +22,7 @@ export default function CtaFinal() {
                         Pronto para transformar seu <span className="gradient-text">atendimento?</span>
                     </h2>
                     <p className="cta-final__subtitle">
-                        Junte-se a mais de 500 profissionais que já automatizaram seu WhatsApp
+                        Junte-se aos profissionais que já automatizaram seu WhatsApp
                         com IA. Comece grátis, sem cartão de crédito.
                     </p>
                     <a href="#" className="btn btn-primary btn-lg neon-glow cta-final__btn" id="cta-final-action">
