@@ -23,6 +23,7 @@ export default function App() {
         <HowItWorks />
         <Demo />
         <Testimonials />
+        <Pricing />
         <Faq />
         <CtaFinal />
       </main>
