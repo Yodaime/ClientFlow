@@ -29,7 +29,7 @@ const containerVariants = {
 
 const cardVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
 };
 
 export default function Problems() {
@@ -55,7 +55,7 @@ export default function Problems() {
                     viewport={{ once: true, margin: '-80px' }}
                 >
                     {problems.map((problem, i) => (
-                        <motion.div key={i} className="problems__card glass-card">
+                        <motion.div key={i} className="problems__card glass-card" variants={cardVariants}>
                             <div className="problems__icon-wrapper">
                                 <problem.icon size={24} />
                             </div>

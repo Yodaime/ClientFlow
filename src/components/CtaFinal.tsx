@@ -25,7 +25,7 @@ export default function CtaFinal() {
                         Junte-se aos profissionais que já automatizaram seu WhatsApp
                         com IA. Comece grátis, sem cartão de crédito.
                     </p>
-                    <a href="#" className="btn btn-primary btn-lg neon-glow cta-final__btn" id="cta-final-action">
+                    <a href="#precos" className="btn btn-primary btn-lg neon-glow cta-final__btn" id="cta-final-action">
                         Começar agora — grátis por 14 dias
                         <ArrowRight size={18} />
                     </a>

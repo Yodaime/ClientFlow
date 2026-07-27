@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# LP Comercial Zenith (ClientFlow AI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page comercial em React + TypeScript + Vite para o produto **ClientFlow AI** — CRM com agentes de IA integrados ao WhatsApp, voltado a profissionais liberais.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19, TypeScript, Vite 8
+- Framer Motion (animações)
+- Lucide React (ícones)
+- CSS com design tokens (tema escuro, glassmorphism)
 
-## React Compiler
+## Seções da página
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Hero → logos parceiros → problemas → recursos → como funciona → demo → depoimentos → preços → FAQ → CTA final → rodapé
 
-## Expanding the Oxlint configuration
+## Comandos
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev      # desenvolvimento (http://localhost:5173)
+npm run build    # build de produção
+npm run preview  # preview do build
+npm run lint     # oxlint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Estrutura
+
+```
+src/
+  App.tsx           # composição das seções
+  index.css         # tokens e utilitários globais
+  components/       # uma seção por componente + CSS co-locado
+```
+
+## Próximos passos (opcional)
+
+- Substituir links `#` de “Entrar” e redes sociais por URLs reais
+- Conectar CTAs a formulário, checkout ou app de cadastro
+- Ajustar copy e marca se o produto comercial for **Zenith** em vez de ClientFlow AI

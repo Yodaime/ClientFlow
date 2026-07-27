@@ -6,7 +6,7 @@ import './Navbar.css';
 const navLinks = [
     { label: 'Recursos', href: '#recursos' },
     { label: 'Como Funciona', href: '#como-funciona' },
-    //{ label: 'Preços', href: '#precos' },
+    { label: 'Preços', href: '#precos' },
     { label: 'FAQ', href: '#faq' },
 ];
 
@@ -38,7 +38,7 @@ export default function Navbar() {
             aria-label="Navegação principal"
         >
             <div className="container navbar__inner">
-                <a href="#" className="navbar__logo" aria-label="ClientFlow AI - Início">
+                <a href="#hero" className="navbar__logo" aria-label="ClientFlow AI - Início">
                     <span className="navbar__logo-icon">
                         <Sparkles size={22} />
                     </span>
@@ -55,7 +55,7 @@ export default function Navbar() {
 
                 <div className="navbar__actions-desktop">
                     <a href="#" className="navbar__link navbar__link--enter">Entrar</a>
-                    <a href="#hero" className="btn btn-primary navbar__cta">
+                    <a href="#precos" className="btn btn-primary navbar__cta">
                         Começar Grátis
                     </a>
                 </div>
@@ -91,7 +91,7 @@ export default function Navbar() {
                         ))}
                         <div className="navbar__mobile-actions">
                             <a href="#" className="btn btn-secondary" style={{ width: '100%' }}>Entrar</a>
-                            <a href="#hero" className="btn btn-primary" style={{ width: '100%' }} onClick={() => setMobileOpen(false)}>Começar Grátis</a>
+                            <a href="#precos" className="btn btn-primary" style={{ width: '100%' }} onClick={() => setMobileOpen(false)}>Começar Grátis</a>
                         </div>
                     </motion.div>
                 )}

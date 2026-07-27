@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="container">
                 <div className="footer__grid">
                     <div className="footer__brand">
-                        <a href="#" className="footer__logo" aria-label="ClientFlow AI - Início">
+                        <a href="#hero" className="footer__logo" aria-label="ClientFlow AI - Início">
                             <span className="footer__logo-icon">
                                 <Sparkles size={18} />
                             </span>
